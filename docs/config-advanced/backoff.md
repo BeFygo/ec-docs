@@ -7,8 +7,10 @@ Enabling the `backoff` option will cause `delay` timeouts to increase exponentia
 
 The graph below shows the relationship between number of sensor triggers and timeout values for the shown parameters.
 ```
-delay = 60
-backoff_factor = 1.1
+  delay: 120
+  backoff: true
+  backoff_factor: 1.2
+  backoff_max: 600
 ```
 
 ![Backoff Graph](../images/backoff_graph.png)
